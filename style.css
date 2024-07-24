@@ -1,0 +1,116 @@
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.results {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.result{
+    border: 1px solid black;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+.result img {
+    width: 100px;
+    height: 100px;
+}
+.options {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.option {
+    transition: 0.5s;
+    border: 1px solid black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 7px;
+}
+.option img {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+}
+.option:hover{
+    scale: 1.1;
+}
+.option span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 24px;
+    margin-top: 10px;
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.buttons button{
+    background-color: aquamarine;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 0 20px;
+}
+.buttons button a{
+    color: black;
+    text-decoration: none;
+}
+span{
+    font-weight: 900;
+}
+.note ul{
+    font-size: 1.3rem;
+}
+@media (max-width: 576px) {
+    .result img, .option img {
+        width: 60px;
+        height: 60px;
+    }
+    .option span {
+        font-size: 18px;
+    }
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    .buttons button {
+        margin: 10px 0;
+    }
+}
+@media (min-width: 768px) {
+    .container{
+        max-width: 100%;
+    }
+    .result img, .option img {
+        width: 100px;
+        height: 100px;
+    }
+    .option span {
+        font-size: 24px;
+    }
+    .buttons {
+        justify-content: end;
+    }
+}
+@media (min-width: 1200px) {
+    .container{
+        max-width: 55%;
+    }
+    .buttons {
+        justify-content: end;
+    }
+}
